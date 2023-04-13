@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarım Nedir?</title>
+    <!-- Responsive Tasarım yazdığımız web sayfasının
+başka uygulamalarda da bozulmadan açılması için 
+kullandığımız bir yöntem.
+@media screen and(max-width:800px)örneğin bu max genişliği 
+800px ve daha küçük olan ekranlar için geçerli..(tablet gibi.)
+ min width özelliği de var.
+-->
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .kutu{
+        width: 25%;
+        height: 400px;
+        border: 1px solid black;
+        background-color: beige;
+        float: left;
+        font-size: 10%;
+    }
+    @media screen and (max-width:700px) {
+
+        .kutu{
+            width: 50%;
+            background-color: blue;
+            font-size: 10%;
+        }
+    } 
+    @media screen and (max-width:400px) {
+        .kutu{
+            width: 100%;
+            background-color: pink;
+            font-size: 10%;
+
+    }
+}
+    
+        
+    
+     
+        
+    
+
+</style>
+</head>
+
+<body>
+    <div class="kutu">Kutu1</div>
+    <div class="kutu">Kutu2</div>
+    <div class="kutu">Kutu3</div>
+    <div class="kutu">Kutu4</div>
+    <div class="kutu">Kutu5</div>
+    <div class="kutu">Kutu6</div>
+
+</body>
+
+</html>

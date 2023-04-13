@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Hizalama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* text align ile yazımızın ne tarafa yaslanabileceğini seçiyoruz.
+         border;çerceve
+         padding ve marginlere dikkat
+         yazıyı sutunlara ayırmak için column-count ile 
+         istediğin kadar sutuna ayırabilirsin.
+          sutun bolmeleri için column rule kullan ve kalınlık +solid +renk ekleyebilirsin
+          tüm tarayıcılarda calısması için  iki adet column count ac ve basına webkit ve moz ekleyerek
+          diğer tarayıcılarda acılmasını sagla
+          aynı sekilde column rule için de bunu yapabilirsin.
+          */
+          div{
+            width: 1000;
+            height: 1000;
+            border: 4px solid rgb(10, 64, 151);
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(177, 225, 209);
+          }
+        body {
+            font-family: 'Pacifico', cursive;
+            width: 900px;
+            margin: 40px auto;
+
+        }
+        p#paragraf1{
+            text-align: center;
+        }
+        p#paragraf2{
+            text-align: justify;
+        }
+        p#paragraf3{
+            text-align: left;
+            column-count: 3;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-rule: 2px solid rgb(11, 181, 125);
+            -moz-column-rule:2px solid rgb(11, 181, 125) ;
+            -webkit-column-rule:2px solid rgb(11, 181, 125) ;
+            border: 3px solid rgb(3, 75, 30);
+
+        }
+        p#paragraf4{
+            text-align: right;
+        }
+        h2{
+            color: rgb(255, 0, 162);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <p id="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas porro ad consequuntur magni sint et
+        at sit. Fugiat, obcaecati necessitatibus, natus, unde consectetur hic doloremque accusantium nostrum nesciunt
+        fugit ipsam!</p>
+    <p id="paragraf2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam laborum, veritatis iusto
+        blanditiis enim possimus sunt architecto adipisci, quos et qui laboriosam totam voluptate ullam fugiat
+        cupiditate aperiam esse.</p>
+    <p id="paragraf3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo neque animi maxime odio. Dolore
+        officia, architecto ut repellendus reiciendis, saepe, eaque quae eius impedit quaerat expedita! Quos consequatur
+        officiis inventore?</p>
+        <p id="paragraf4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo neque animi maxime odio. Dolore
+        officia, architecto ut repellendus reiciendis, saepe, eaque quae eius impedit quaerat expedita! Quos consequatur
+        officiis inventore?</p>
+    </div>
+</body>
+
+</html>

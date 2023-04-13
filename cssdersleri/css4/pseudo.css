@@ -1,0 +1,53 @@
+/* pseudo elements 
+first line birinci satırdaki değişiklikler için
+first letter ilk kelimedeki değişiklikler
+word spacing kelimeler arasındaki boşluklar için
+letter spacing harfler arasındaki boşluk için
+padding satır aralarındaki boşluğu ifade etmek için kullanılır.
+*/
+p::first-line {
+    color: crimson;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+p::first-letter {
+    color: blueviolet;
+    font-size: 50px;
+
+}
+
+/* pseudo class
+ first child ve last child ile listedeki ilk ve son değerler arasında değişiklik yapabilirsin.link etikelerinde hover etiketiyle linkin üzerine geldiğinde ne olacağına karar verirsin.*/
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+ul li:first-child {
+    background-color: aquamarine;
+}
+
+ul li:last-child {
+    background-color: aqua;
+}
+
+a:visited {
+    color: cornflowerblue;
+}
+a:hover{
+    color: firebrick;
+    background-color: cornflowerblue;
+
+}
+a{
+    padding: 5px 10px;
+    text-decoration:none;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position özellikleri</title>
+    <!--   
+1 static
+2 relative başlangıç noktasından itibaren bir değer verir
+3 fixed sayfa aşağı kaysa bile bizim oluşturdugumuz div hep yanı noktada kalıyor.
+4 absolute sayfanın en ustune goe değerleri uygular
+5 sticky menü barlar örneğimn sayfa indirilse bile o yerinde durmaya devam eder.
+-->
+    <style>
+        .kutu {
+            height: 300px;
+          width: 300px;
+
+        }
+
+        #kutu1 {
+            background: lightblue;
+            width: 100%;
+            height: 150px;
+            position:sticky;
+            top:  0px;
+
+
+          
+
+        }
+
+        #kutu2 {
+            background: lightcoral;
+        }
+
+        #kutu3 {
+            background: lightslategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kutu" id="kutu1">Kutu1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis
+        incidunt excepturi dicta! Minima ipsum repellendus saepe! Cumque quod reiciendis nesciunt voluptates dolore
+        maiores quos nisi, expedita nihil repellendus nam sequi aliquam enim at praesentium, inventore velit odit
+        necessitatibus. Est vero quo ut sunt soluta velit expedita adipisci, assumenda quos.</div>
+    <div class="kutu" id="kutu2">Kutu2</div>
+    <div class="kutu" id="kutu3">kutu3</div>
+    <div style="height: 1000px;"></div>
+
+
+</body>
+
+</html>

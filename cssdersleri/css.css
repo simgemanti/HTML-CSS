@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid red;
+}
+h3{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    border: 2px violet;
+}
+p{
+    color: darkslategray;
+    text-align: justify;
+}
